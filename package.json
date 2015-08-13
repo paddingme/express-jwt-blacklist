@@ -1,0 +1,28 @@
+{
+  "name": "express-jwt-blacklist",
+  "version": "0.1.0",
+  "description": "Middleware for express-jwt to invalidate blacklisted JWT tokens",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test/",
+    "test:integration": "mocha test/integration/"
+  },
+  "keywords": [
+    "express",
+    "jwt",
+    "express-jwt",
+    "jsonwebtoken",
+    "blacklist",
+    "session"
+  ],
+  "author": "Nil Gradisnik <nil@layer.com>",
+  "license": "ISC",
+  "dependencies": {
+    "memcached": "~2.1.0",
+    "redis": "~0.12.1"
+  },
+  "devDependencies": {
+    "should": "~7.0.3",
+    "mocha": "~2.2.5"
+  }
+}
