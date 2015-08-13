@@ -1,6 +1,6 @@
 {
   "name": "express-jwt-blacklist",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Middleware for express-jwt to invalidate blacklisted JWT tokens",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "session"
   ],
   "author": "Nil Gradisnik <nil@layer.com>",
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "repository": "layerhq/express-jwt-blacklist",
   "dependencies": {
     "memcached": "~2.1.0",
     "redis": "~0.12.1"
