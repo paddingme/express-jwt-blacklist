@@ -1,7 +1,7 @@
 {
   "name": "express-jwt-blacklist",
-  "version": "1.0.0",
-  "description": "Middleware for express-jwt to invalidate blacklisted JWT tokens",
+  "version": "1.0.1",
+  "description": "express-jwt plugin for token blacklisting",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test/",

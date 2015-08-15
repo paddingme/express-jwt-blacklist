@@ -49,7 +49,7 @@ By passing `options` you can set the following:
  - `strict` - Strict revocation policy will return revoked `true` on store failure (default: `false`)
 
 ```javascript
-blacklist.config({
+blacklist.configure({
   tokenId: 'jti',
   strict: true,
   store: {
@@ -75,6 +75,13 @@ This function will revoke a token, by passing in the `req.user` set by express-j
 ### blacklist.purge(user)
 
 This function will purge **all** tokens older than current timestamp, by passing in the `req.user` set by express-jwt library.
+
+### Custom store
+
+You can implement your own store by passing `store` object that implements these two functions:
+
+ - `get(key, callback)`
+ - `set(key, data, lifetime, callback)`
 
 ### Considerations
 
